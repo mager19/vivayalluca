@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------
+
+This is SASS file that contains principal styles of theme
+Name File: main.sass - main.css
+Copyright: (C) 2019
+
+
+ - Content Base -
+
+Importing:
+Bootstrap Grid, Buttons, Menu Mobile, Gravity Form Styles, Login,
+Theme - file that defines Fonts and Base Colors ,
+
+
+- Full Width Content Class
+- Background of Image Ready to Import
+- Images Styles Ready
+- Header
+- Menu
+- Footer
+- Error 404
+- Confirmation Page
+- Pagination
+- Breadcrumbs
+
+-----------------------------------------------------------------------------------*/
+
+@import "_partials/_bootstrap/bootstrap";
+@import "_partials/_theme";
+@import "_partials/_base";
+@import "_partials/_header";
+@import "_partials/_footer";

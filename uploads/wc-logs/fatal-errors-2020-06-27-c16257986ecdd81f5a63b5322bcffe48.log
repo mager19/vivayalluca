@@ -1,0 +1,2 @@
+2020-06-27T22:27:42+00:00 CRITICAL require(): Failed opening required '/Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/themes/storefront/inc/custom-header.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/themes/vivayalluca/functions.php on line 160
+

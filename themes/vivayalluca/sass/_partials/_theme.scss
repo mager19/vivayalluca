@@ -1,0 +1,168 @@
+/*-----------------------------------------------------------------------------------
+
+This is SASS file that defines Fonts and Base Colors
+Name File: theme.sass - theme.css
+Copyright: (C) 2018
+
+ - Content Base -
+
+- Colors
+- Fonts
+- Font Weights
+- Global sizes
+
+-----------------------------------------------------------------------------------*/
+
+//Define performances Theme Colors
+$white: #fff;
+
+$dark-1: #3a3838;
+$dark-2: #545454;
+
+$border-1: #e2e2e2;
+
+$txt: #7f7e7e;
+
+@font-face {
+	font-family: helvetica;
+	src: local("Helvetica"), local("Helvetica"), url(helvetica.woff);
+	font-weight: bold;
+}
+
+//Define Theme Fonts
+$font-family-base: "helvetica";
+$font-family-alt: "proxima-nova";
+
+/*
+    Define Theme Font Weights:
+
+    $font-weight-light:  300;
+    $font-weight-normal: 400;
+    $font-weight-base:   $font-weight-normal;
+*/
+$font-weight-semi: 600;
+$font-weight-bold: 800;
+
+//Define global size
+html {
+	@include media-breakpoint-down(lg) {
+		font-size: 90%;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 80%;
+	}
+}
+
+body {
+	overflow-x: hidden;
+	background: $white;
+	font-size: $font-size-base;
+	color: $dark-1;
+	font-weight: $font-weight-normal;
+	font-family: $font-family-alt;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	word-wrap: normal;
+	word-break: keep-all;
+	hyphens: none;
+	a {
+		color: $dark-1;
+		font-weight: bold;
+		font-family: $font-family-base;
+	}
+	p {
+		color: $dark-2;
+		//opacity: 0.8;
+		word-wrap: normal;
+		word-break: keep-all;
+		hyphens: none;
+		line-height: 180%;
+
+		a {
+			font-family: $font-family-base;
+			font-weight: bold;
+			&:hover {
+				color: $primary;
+				opacity: 0.8;
+			}
+		}
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1.5rem;
+		li {
+			list-style: none;
+			position: relative;
+			padding-left: 15px;
+			margin-bottom: 10px;
+			font-weight: $font-weight-light;
+		}
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $font-family-base;
+		color: $dark-2;
+		font-weight: $font-weight-bold;
+		word-wrap: normal;
+		word-break: keep-all;
+		hyphens: none;
+	}
+	h1,
+	.h1 {
+		font-size: 2.8rem;
+		line-height: 3.6rem;
+		@include media-breakpoint-down(sm) {
+			font-size: 2rem;
+			line-height: 2.4rem;
+		}
+	}
+	h2,
+	.h2 {
+		font-size: 2.25rem;
+		line-height: 2.9375rem;
+	}
+	h3,
+	.h3 {
+		font-size: 1.5rem;
+		line-height: 1.8125rem;
+		margin-bottom: 1rem;
+	}
+	h4,
+	.h4 {
+		font-size: 1.125rem;
+		line-height: 1.625rem;
+	}
+	h5,
+	.h5 {
+		font-size: 1rem;
+		line-height: 1.4375rem;
+	}
+	h6,
+	.h6 {
+		font-size: 0.875rem;
+		line-height: 1.3125rem;
+	}
+}
+
+.content-area {
+	ul {
+		li {
+			padding-left: 1.5rem;
+			&::before {
+				border-radius: 50%;
+				position: absolute;
+				left: 0px;
+				top: 10px;
+				background-color: $secondary;
+				width: 0.45rem;
+				height: 0.45rem;
+				content: "";
+			}
+		}
+	}
+}
