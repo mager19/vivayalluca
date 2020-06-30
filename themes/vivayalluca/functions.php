@@ -49,6 +49,8 @@ if (!function_exists('vivayalluca_setup')) :
 		 */
 		add_theme_support('post-thumbnails');
 
+		add_image_size('slidehome', 1280, 534, true);
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
@@ -155,6 +157,9 @@ function vivayalluca_scripts()
 
 	wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css', null, '1.0.1', false);
 
+	wp_enqueue_style('google-font-icon', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+
+	wp_enqueue_script('vivayallucajs', get_template_directory_uri() . '/js/vivayalluca.js', array(), _S_VERSION, true);
 	wp_enqueue_script('vivayalluca-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
