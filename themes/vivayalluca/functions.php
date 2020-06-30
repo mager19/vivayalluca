@@ -57,6 +57,7 @@ if (!function_exists('vivayalluca_setup')) :
 				'menu-1' => esc_html__('Header-left', 'vivayalluca'),
 				'menu-2' => esc_html__('Header-right', 'vivayalluca'),
 				'menu-footer' => esc_html__('Menu-footer', 'vivayalluca'),
+				'menu-aux' => esc_html__('Header-right-aux', 'vivayalluca'),
 			)
 		);
 

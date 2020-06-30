@@ -46,11 +46,41 @@
 					</div><!-- .site-branding -->
 					<nav class="site-nav col-lg-4">
 						<div class="main-nav main-nav__right">
-							<?php
-							if (has_nav_menu('menu-2')) {
-								wp_nav_menu(array('theme_location' => 'menu-2'));
-							}
-							?>
+							<div class="row">
+								<div class="col-12">
+									<?php
+									if (has_nav_menu('menu-2')) {
+										wp_nav_menu(array('theme_location' => 'menu-2'));
+									}
+									?>
+								</div>
+
+								<div class="col-12">
+									<ul class="menu__aux">
+										<li class="whatsapp_link">
+											<?php $phone = get_field('telefono', 'option'); ?>
+											<a href="tel:<?php echo $phone; ?>">
+												<?php echo $phone; ?>
+											</a>
+										</li>
+										<li>
+											<a href="#">Tienda Online</a>
+										</li>
+										<li class="shopping_cart">
+											<a href="#">
+
+											</a>
+										</li>
+
+										<li class="login">
+											<a href="#">
+
+											</a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
 						</div>
 					</nav>
 				</div>

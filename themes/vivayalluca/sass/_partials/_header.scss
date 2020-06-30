@@ -2,13 +2,10 @@
 	align-items: center;
 	display: flex;
 	min-height: 70px;
-	padding-top: 1rem;
+	padding-top: 0;
 }
 
 .main-nav {
-	display: flex;
-	align-items: center;
-
 	ul {
 		margin-bottom: 0;
 		li {
@@ -25,6 +22,8 @@
 }
 
 .main-nav__left {
+	display: flex;
+	align-items: center;
 	ul {
 		li {
 			padding-left: 0;
@@ -48,4 +47,52 @@
 	display: flex;
 	justify-content: center;
 	min-height: 70px;
+}
+
+.whatsapp_link {
+	position: relative;
+	a {
+		padding-left: 1rem;
+	}
+	&:before {
+		background-image: url("../img/whatsapp.png");
+		content: "";
+		display: block;
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 20%;
+	}
+}
+
+.menu__aux {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.shopping_cart {
+	position: relative;
+
+	a {
+		&:before {
+			@include mIcons("shopping_cart");
+			font-size: 2rem;
+			top: 20%;
+		}
+	}
+}
+
+.login {
+	position: relative;
+
+	a {
+		&:before {
+			@include mIcons("person");
+			font-size: 2rem;
+		}
+	}
+}
+
+.menu-top-right-container {
+	margin-top: 2rem;
 }
