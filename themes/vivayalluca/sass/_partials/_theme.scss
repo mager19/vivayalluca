@@ -71,7 +71,8 @@ body {
 		font-family: $font-family-base;
 	}
 	p {
-		color: $dark-2;
+		font-family: $font-family-base;
+		color: $txt;
 		//opacity: 0.8;
 		word-wrap: normal;
 		word-break: keep-all;
@@ -128,8 +129,11 @@ body {
 	}
 	h3,
 	.h3 {
+		color: $txt;
 		font-size: 1.5rem;
-		line-height: 1.8125rem;
+		font-family: $font-family-base;
+		font-weight: 100;
+		line-height: 2rem;
 		margin-bottom: 1rem;
 	}
 	h4,
@@ -165,6 +169,11 @@ body {
 				content: "";
 			}
 		}
+	}
+
+	p {
+		font-size: 14px;
+		text-align: justify;
 	}
 }
 
