@@ -46,9 +46,9 @@ get_header();
 
 			</div>
 		</div>
-		<div class="col-lg-5 right__column">
+		<div class="col-lg-5 right__column pt-4">
 			<div class="content">
-				<h3><?php the_field('item_1_title'); ?></h3>
+				<h3 class="text-center text-lg-left pb-4 pb-lg-0"><?php the_field('item_1_title'); ?></h3>
 				<?php the_field('item_1_content'); ?>
 			</div>
 		</div>
@@ -60,7 +60,7 @@ get_header();
 	<div class="row">
 		<div class="col-lg-5 right__column">
 			<div class="content">
-				<h3><?php the_field('item_2_title'); ?></h3>
+				<h3 class="text-center text-lg-left pb-4 pb-lg-0"><?php the_field('item_2_title'); ?></h3>
 				<?php the_field('item_2_content'); ?>
 			</div>
 		</div>
