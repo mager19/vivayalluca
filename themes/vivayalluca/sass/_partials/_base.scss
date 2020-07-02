@@ -51,3 +51,65 @@ body {
 	letter-spacing: 0.93px;
 	padding: 1rem 0 3rem 0;
 }
+
+form {
+	position: relative;
+
+	padding: 0 15px;
+
+	li {
+		&:before {
+			display: none !important;
+			opacity: 0;
+		}
+	}
+
+	input,
+	textarea {
+		border: 0;
+		border-bottom: 1px solid $border-1;
+		margin-bottom: 4rem;
+		padding-left: 10px;
+		width: 70%;
+
+		&::placeholder {
+			font-size: 14px;
+			font-family: $font-family-base;
+			color: $txt;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			opacity: 0.8;
+		}
+	}
+
+	.name_first {
+		label {
+			display: none !important;
+		}
+	}
+
+	.gfield_label {
+		display: none !important;
+	}
+
+	ul li.gfield {
+		padding: 0;
+		margin: 0;
+	}
+
+	.gfield_required {
+		display: none;
+	}
+
+	.gform_footer {
+		input[type="submit"] {
+			background-color: #545454;
+			border-bottom: 0;
+			font-size: 14px;
+			font-family: $font-family-base;
+			color: #fff;
+			letter-spacing: 0.65px;
+			padding: 5px 1rem;
+		}
+	}
+}

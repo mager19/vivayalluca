@@ -37,3 +37,104 @@
 		font-size: 1.875rem;
 	}
 }
+
+.form__contact {
+	.gform_footer {
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		padding: 0;
+		margin-top: 5px;
+
+		@include media-breakpoint-down(xs) {
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+
+		input[type="submit"] {
+			background-color: #545454;
+			border-bottom: 0;
+			font-size: 14px;
+			font-family: $font-family-base;
+			color: #fff;
+			letter-spacing: 0.65px;
+			padding: 5px 1rem;
+		}
+	}
+}
+
+/*showrooms*/
+.showrooms {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	&__item {
+		padding: 2rem 0;
+
+		.image__item {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 100%;
+			height: 10rem;
+		}
+
+		.informacion__item {
+			padding-top: 2rem;
+
+			h3 {
+				color: $dark-2;
+				opacity: 1;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 20px;
+				margin-bottom: 5px;
+			}
+
+			a {
+				font-size: 14px;
+				color: $txt;
+			}
+
+			.links__showroom {
+				li {
+					padding-left: 0;
+					margin-bottom: 0px;
+					a {
+						font-size: 14px;
+						color: $txt;
+						&:before {
+							padding-right: 10px;
+						}
+					}
+				}
+
+				.telefono__showroom {
+					&:before {
+						@include mIcons("call");
+						font-size: 12px;
+					}
+				}
+
+				.whatsapp__showroom {
+					display: flex;
+					align-items: center;
+					padding-left: 22px;
+					position: relative;
+					&:before {
+						background-image: url("../img/whatsapp.png");
+						content: "";
+						display: block;
+						width: 12px;
+						height: 12px;
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
