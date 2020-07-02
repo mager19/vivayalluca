@@ -113,3 +113,13 @@ form {
 		}
 	}
 }
+
+.title__post__type {
+	border-bottom: 2px solid $border-1;
+	padding-top: 1rem;
+
+	h3 {
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+}

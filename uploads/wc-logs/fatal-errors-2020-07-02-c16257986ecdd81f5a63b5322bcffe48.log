@@ -1,2 +1,10 @@
 2020-07-02T16:59:00+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/themes/vivayalluca/page-contacto.php on line 49
 
+2020-07-02T19:30:32+00:00 CRITICAL Uncaught Error: Call to undefined function printr() in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/themes/vivayalluca/single-coleccion.php:19
+Stack trace:
+#0 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-blog-header.php(19): require_once('/Users/mager19/...')
+#2 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/index.php(17): require('/Users/mager19/...')
+#3 {main}
+  thrown in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/themes/vivayalluca/single-coleccion.php on line 19
+
