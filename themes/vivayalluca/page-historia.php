@@ -24,7 +24,7 @@ get_header();
 				<h2 class="title--page text-center"><?php the_title(); ?></h2>
 
 				<div class="row">
-					<div class="col-6 mx-auto">
+					<div class="col-lg-6 col-10 mx-auto">
 						<?php the_content(); ?>
 					</div>
 
@@ -40,7 +40,7 @@ get_header();
 
 					<?php $extra = get_Field("contenido_extra") ?>
 					<?php if ($extra) { ?>
-						<div class="col-6 mx-auto py-5">
+						<div class="col-lg-6 col-10 mx-auto py-5">
 							<?php echo $extra ?>
 						</div>
 					<?php

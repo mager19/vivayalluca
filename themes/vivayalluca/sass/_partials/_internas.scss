@@ -1,0 +1,35 @@
+.left__column {
+	padding: 2rem;
+
+	.content__image {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 30.625rem;
+		width: 100%;
+	}
+
+	p {
+		color: $txt;
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 1.875rem;
+	}
+}
+
+.right__column {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	p {
+		color: $txt;
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 1.875rem;
+	}
+}
