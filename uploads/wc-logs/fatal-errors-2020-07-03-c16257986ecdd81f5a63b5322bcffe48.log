@@ -1,0 +1,13 @@
+2020-07-03T19:24:27+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/plugins/gravityforms/common.php:2732
+Stack trace:
+#0 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/plugins/gravityforms/common.php(2837): GFCommon::get_version_info(true)
+#1 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/plugins/gravityforms/gravityforms.php(697): GFCommon::check_update(Object(stdClass), true)
+#2 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-includes/class-wp-hook.php(289): GFForms::check_update(Object(stdClass))
+#3 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-includes/plugin.php(206): WP_Hook->apply_filters(Object(stdClass), Array)
+#4 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-includes/option.php(1801): apply_filters('site_transient_...', Object(stdClass), 'update_plugins')
+#5 /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/w in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/plugins/gravityforms/common.php on line 2732
+
+2020-07-03T19:33:35+00:00 CRITICAL syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/themes/vivayalluca/single-coleccion.php on line 54
+
+2020-07-03T19:45:08+00:00 CRITICAL syntax error, unexpected '}' in /Users/mager19/Documents/webserverLocal/vivayalluca/app/public/wp-content/themes/vivayalluca/single-coleccion.php on line 79
+
