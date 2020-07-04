@@ -145,3 +145,63 @@
 	padding-top: 4rem;
 	padding-bottom: 1rem;
 }
+
+/*pide Cita*/
+.pide-cita {
+	margin-bottom: 4rem;
+	.content {
+		display: flex;
+
+		@include media-breakpoint-down(xs) {
+			display: block;
+		}
+
+		ul {
+			li {
+				display: flex;
+				align-items: center;
+				margin-left: 1.5rem;
+				margin-bottom: 2px;
+
+				@include media-breakpoint-down(xs) {
+					margin-left: 0;
+				}
+
+				a {
+					color: $txt;
+					font-size: 14px;
+					text-decoration: none;
+					padding-left: 10px;
+					position: relative;
+				}
+				&:first-child {
+					&:before {
+						@include mIcons("phone");
+						color: $txt;
+						font-size: 12px;
+						padding-left: 5px;
+					}
+					&:after {
+						background-image: url("../img/whatsapp.png");
+						content: "";
+						display: block;
+						color: $txt;
+						left: 0;
+						position: absolute;
+						width: 12px;
+						height: 12px;
+					}
+				}
+
+				&:last-child {
+					&:before {
+						@include mIcons("email");
+						color: $txt;
+						font-size: 12px;
+						padding-left: 5px;
+					}
+				}
+			}
+		}
+	}
+}

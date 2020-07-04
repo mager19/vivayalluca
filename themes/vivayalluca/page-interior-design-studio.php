@@ -96,6 +96,8 @@ get_header();
 	</div>
 </div>
 
+<?php get_template_part('inc/pide', 'cita') ?>
+
 <?php
 
 get_footer();

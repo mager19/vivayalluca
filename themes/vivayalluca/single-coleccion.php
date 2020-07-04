@@ -155,26 +155,29 @@ while (have_posts()) : the_post();
 					}
 					?>
 
-					<?php $imagen = get_sub_field('imagen'); ?>
-
-					<!-- <img src="<?php echo $imagen['url']; ?>" class="mx-auto"> -->
-
-
 
 				<?php endif; ?>
+
 			</div>
 		</div>
 	</section>
 
-	<section class="extra__content pb-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 mx-auto">
-					<?php the_field('extra_content'); ?>
+	<?php $extraContent = get_field('extra_content'); ?>
+	<?php if ($extraContent) { ?>
+		<section class="extra__content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<?php echo $extraContent; ?>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	<?php
+	} ?>
+
+	<?php get_template_part('inc/pide', 'cita') ?>
+
 
 <?php endwhile; ?>
 <!-- post navigation -->

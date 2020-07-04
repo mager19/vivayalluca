@@ -203,3 +203,17 @@ body {
 	-webkit-font-feature-settings: "liga";
 	-webkit-font-smoothing: antialiased;
 }
+
+.pide-cita,
+.extra__content {
+	p {
+		color: $txt;
+		font-size: 14px;
+		text-align: justify;
+	}
+
+	a {
+		color: $txt;
+		text-decoration: underline;
+	}
+}
