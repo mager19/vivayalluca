@@ -19,7 +19,7 @@ while (have_posts()) : the_post();
 	<section class="intro__coleccion">
 		<div class="container content-area">
 			<div class="row">
-				<div class="col-4 mx-auto">
+				<div class="col-8 mx-auto">
 					<div class="title__post__type">
 						<h3 class="text-center"><?php echo $obj->label; ?></h3>
 					</div>
@@ -46,15 +46,8 @@ while (have_posts()) : the_post();
 			<div class="row">
 				<?php if (have_rows('imagenes')) : ?>
 
-
 					<?php
 					$numrows = count(get_field('imagenes'));
-
-					?>
-
-
-					<?php
-
 
 					switch ($numrows) {
 						case '1':
