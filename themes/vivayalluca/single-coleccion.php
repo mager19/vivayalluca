@@ -115,6 +115,44 @@ while (have_posts()) : the_post();
 								</div>
 
 							</div>
+						<?php
+							break;
+
+						case '4':
+							$counter = 1;
+							while (have_rows('imagenes')) : the_row();
+
+								if ($counter == 1) {
+									$imagen1 = get_sub_field('imagen');
+								} elseif ($counter == 2) {
+									$imagen2 = get_sub_field('imagen');
+								} elseif ($counter == 3) {
+									$imagen3 = get_sub_field('imagen');
+								} else {
+									$imagen4 = get_sub_field('imagen');
+								}
+
+								$counter++;
+							endwhile; ?>
+							<div class="col-md-4 col-12 text-center mb-4 mb-lg-0">
+								<img src="<?php echo $imagen1['url']; ?>" class="mx-auto">
+							</div>
+
+							<div class="col-md-4 col-12">
+								<div class="row no-gutters">
+									<div class="col-12 mb-4 text-center">
+										<?php echo wp_get_attachment_image($imagen2['id'], array(300, 240)); ?>
+									</div>
+									<div class="col-12 text-center">
+										<?php echo wp_get_attachment_image($imagen3['id'], array(300, 240)); ?>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-md-4 col-12 pt-4 d-flex align-items-end justify-center">
+								<img src="<?php echo $imagen4['url']; ?>" class="mx-auto">
+							</div>
 					<?php
 							break;
 
