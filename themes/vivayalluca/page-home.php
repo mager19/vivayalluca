@@ -93,6 +93,44 @@ get_header();
 			<?php else : ?>
 				<!-- no posts found -->
 			<?php endif; ?>
+			<?php wp_reset_query(); ?>
+		</div>
+	</div>
+</section>
+
+<!-- Interior Design -->
+<section class="colecciones interior-design content-area ">
+	<div class="container">
+		<div class="row">
+			<div class="section__title text-center mx-auto">
+				<h3>
+					INTERIOR DESIGN STUDIO
+				</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<?php if (have_rows('interior_design_items')) : ?>
+
+				<?php while (have_rows('interior_design_items')) : the_row(); ?>
+
+					<div class="col-lg-4 col-md-6 colecciones__item">
+						<div class="colecciones__item__content">
+							<a href="/interior-design-studio/<?php the_sub_field('interior_item_link'); ?>">
+								<?php $url = get_sub_field('interior_item_image'); ?>
+								<div class="item__header" style="background-image:url(<?php echo $url; ?>);">
+
+								</div>
+								<h3 class="item__title">
+									<?php the_sub_field('interior_item_title'); ?>
+								</h3>
+							</a>
+						</div>
+					</div>
+
+				<?php endwhile; ?>
+
+			<?php endif; ?>
 		</div>
 	</div>
 </section>

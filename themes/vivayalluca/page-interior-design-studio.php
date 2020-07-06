@@ -36,7 +36,7 @@ get_header();
 </div>
 
 <!-- Proyectos -->
-<div class="container-fluid left__column">
+<div class="container-fluid left__column" id="interiores">
 	<div class="row">
 		<div class="col-lg-7">
 			<?php
@@ -56,7 +56,7 @@ get_header();
 </div>
 
 
-<div class="container-fluid left__column">
+<div class="container-fluid left__column" id="medidas">
 	<div class="row">
 		<div class="col-lg-5 right__column">
 			<div class="content">
@@ -76,7 +76,7 @@ get_header();
 	</div>
 </div>
 
-<div class="container-fluid left__column">
+<div class="container-fluid left__column" id="comerciales">
 	<div class="row">
 		<div class="col-lg-6 mx-auto">
 			<div class="content">
