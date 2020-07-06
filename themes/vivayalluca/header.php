@@ -28,7 +28,7 @@
 		<header id="masthead" class="site-header">
 			<div class="container">
 				<div class="row header__container">
-					<nav class="site-nav col-lg-4">
+					<nav class="site-nav col-lg-4 d-none d-lg-block">
 						<div class="main-nav main-nav__left">
 							<?php
 							if (has_nav_menu('menu-1')) {
@@ -39,12 +39,20 @@
 					</nav>
 					<!--/Menu-->
 					<div class="site-branding col-lg-4 text-center">
-						<?php $GETlogo = get_field('logo_site', 'option'); ?>
-						<a href="<?php echo esc_url(get_bloginfo('url')); ?>">
-							<img src="<?php echo $GETlogo['url']; ?>" height="<?php echo $GETlogo['height'] / 2; ?>" width="<?php echo $GETlogo['width'] / 2; ?>" />
-						</a>
+						<!-- Button trigger modal -->
+						<div class="mobile-nav flex items-center d-block d-lg-none">
+							<button type="button" id="openMenu">
+								<i class="material-icons">menu</i>
+							</button>
+						</div>
+						<div class="logoContainer">
+							<?php $GETlogo = get_field('logo_site', 'option'); ?>
+							<a href="<?php echo esc_url(get_bloginfo('url')); ?>">
+								<img src="<?php echo $GETlogo['url']; ?>" height="<?php echo $GETlogo['height'] / 2; ?>" width="<?php echo $GETlogo['width'] / 2; ?>" />
+							</a>
+						</div>
 					</div><!-- .site-branding -->
-					<nav class="site-nav col-lg-4">
+					<nav class="site-nav col-lg-4 d-none d-lg-block">
 						<div class="main-nav main-nav__right">
 							<div class="row">
 								<div class="col-12">

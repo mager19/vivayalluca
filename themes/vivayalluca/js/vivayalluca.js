@@ -22,10 +22,10 @@
         });
     });
 
-    // document.querySelector("#menumobile").addEventListener("click", e => {
-    //     e.preventDefault();
-    //     fps_mmenu.open();
-    // });
+    document.querySelector("#openMenu").addEventListener("click", e => {
+        e.preventDefault();
+        fps_mmenu.open();
+    });
 
 
 

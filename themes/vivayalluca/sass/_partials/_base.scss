@@ -126,4 +126,21 @@ form {
 
 img {
 	max-width: 100%;
+	height: auto;
+}
+
+.mobile-nav {
+	background-color: transparent;
+	border: none !important;
+	padding-top: 0.5rem;
+	padding-right: 1rem;
+
+	button {
+		border: none !important;
+		background-color: transparent !important;
+
+		i {
+			font-size: 2rem;
+		}
+	}
 }
