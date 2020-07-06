@@ -37,7 +37,7 @@
 								<h3>Suscríbete para recibir news y promos</h3>
 							</div>
 							<div class="form">
-								<?php echo do_shortcode("[gravityform id=2 title=false description=false ajax=true tabindex=49]") ?>
+								<?php echo do_shortcode("[gravityform id=3 title=false description=false ajax=true tabindex=49]") ?>
 							</div>
 						</div>
 					</div>
