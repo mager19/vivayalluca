@@ -114,7 +114,7 @@ get_header();
 
 				<?php while (have_rows('interior_design_items')) : the_row(); ?>
 
-					<div class="col-lg-4 col-md-6 colecciones__item">
+					<div class="col-lg-4 col-md-6 mx-auto colecciones__item">
 						<div class="colecciones__item__content">
 							<a href="/interior-design-studio/<?php the_sub_field('interior_item_link'); ?>">
 								<?php $url = get_sub_field('interior_item_image'); ?>

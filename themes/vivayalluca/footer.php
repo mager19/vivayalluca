@@ -12,7 +12,7 @@
 
 ?>
 
-<section class="menu-cta">
+<section class="menu-cta d-none d-lg-block">
 	<div class="container">
 		<div class="row">
 			<div class="main-nav menu__bottom">
@@ -27,58 +27,66 @@
 </section>
 
 <footer>
-	<div class="container-fluid">
+	<div class="container-fluid container-sm">
 		<div class="row">
 			<div class="container__footer">
-
-				<div class="col-lg-6">
-					<div class="footer__left">
-						<h3>Suscríbete para recibir news y promos</h3>
-						<?php echo do_shortcode("[gravityform id=3 title=false description=false ajax=true tabindex=49]") ?>
+				<div class="row">
+					<div class="col-lg-6 col-md-7 col-12">
+						<div class="footer__left">
+							<div class="title">
+								<h3>Suscríbete para recibir news y promos</h3>
+							</div>
+							<div class="form">
+								<?php echo do_shortcode("[gravityform id=2 title=false description=false ajax=true tabindex=49]") ?>
+							</div>
+						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6">
-					<div class="footer__right">
-						<div class="row">
-							<div class="col-12 items__social">
-								<?php
-								if (have_rows('social_icons', 'option')) : ?>
+					<div class="col-lg-6 col-md-5 col-12">
+						<div class="footer__right">
+							<div class="row">
+								<div class="col-12 items__social">
+									<?php
+									if (have_rows('social_icons', 'option')) : ?>
+
+										<?php
+										while (have_rows('social_icons', 'option')) : the_row();
+											$social = get_sub_field('social_icon');
+										?>
+											<li>
+												<a href="<?php the_sub_field('social_profile'); ?>" target="_blank" data-linktype="social" data-socialnetwork="<?php echo $social['value']; ?>">
+													<i class="icon-<?php echo $social['value']; ?>"></i>
+												</a>
+											</li>
+										<?php endwhile; ?>
 
 									<?php
-									while (have_rows('social_icons', 'option')) : the_row();
-										$social = get_sub_field('social_icon');
+									endif;
 									?>
-										<li>
-											<a href="<?php the_sub_field('social_profile'); ?>" target="_blank" data-linktype="social" data-socialnetwork="<?php echo $social['value']; ?>">
-												<i class="icon-<?php echo $social['value']; ?>"></i>
+								</div>
+
+								<div class="col-12 cita__footer">
+									<h3>Haz una cita</h3>
+									<ul class="menu__aux">
+										<li class="whatsapp_link">
+											<?php $phone = get_field('telefono', 'option'); ?>
+											<a href="tel:<?php echo $phone; ?>">
+												<?php echo $phone; ?>
 											</a>
 										</li>
-									<?php endwhile; ?>
-
-								<?php
-								endif;
-								?>
+									</ul>
+								</div>
 							</div>
-
-							<div class="col-12 cita">
-
-								<h3>HAZ UNA CITA</h3>
-								<ul class="menu__aux">
-									<li class="whatsapp_link">
-										<?php $phone = get_field('telefono', 'option'); ?>
-										<a href="tel:<?php echo $phone; ?>">
-											<?php echo $phone; ?>
-										</a>
-									</li>
-								</ul>
-
-							</div>
-
 						</div>
 					</div>
 				</div>
 			</div>
+
+
+
+
+
+
 		</div>
 	</div>
 </footer>

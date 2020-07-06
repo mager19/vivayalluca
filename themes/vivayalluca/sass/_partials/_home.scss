@@ -90,4 +90,8 @@
 
 .interior-design {
 	padding-bottom: 7rem;
+
+	@include media-breakpoint-down(md) {
+		padding-bottom: 2rem;
+	}
 }
