@@ -37,12 +37,14 @@ $txt: #7f7e7e;
 
 @font-face {
 	font-family: "Helvetica Neue LT W05_65 Medium";
-	src: url("Fonts/7802e576-2ffa-4f22-a409-534355fbea79.woff") format("woff");
+	src: url("../css/fonts/7802e576-2ffa-4f22-a409-534355fbea79.woff")
+		format("woff");
 }
 
 @font-face {
 	font-family: "Helvetica Neue LT W05_35 Thin";
-	src: url("Fonts/b2c1327f-ab3d-4230-93d7-eee8596e1498.woff") format("woff");
+	src: url("../css/fonts/b2c1327f-ab3d-4230-93d7-eee8596e1498.woff")
+		format("woff");
 }
 
 //Define Theme Fonts
