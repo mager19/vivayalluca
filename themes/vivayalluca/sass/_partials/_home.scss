@@ -19,15 +19,16 @@
 
 /*introduction*/
 .introduction {
-	color: $dark-1;
-	font-family: $font-family-base;
-	font-size: 0.875rem;
-	letter-spacing: 0.83px;
-	line-height: 21px;
-	opacity: 0.8;
-
 	&__content {
-		text-align: justify;
+		p {
+			color: $dark-1;
+			text-align: justify;
+			color: $dark-1;
+			font-family: $font-family-baseThin;
+			font-size: 0.875rem;
+			letter-spacing: 0.83px;
+			line-height: 21px;
+		}
 	}
 }
 
@@ -38,6 +39,10 @@
 
 	border-bottom: 2px solid $border-1;
 	margin-bottom: 2rem;
+
+	h3 {
+		letter-spacing: 0.5px;
+	}
 
 	@include media-breakpoint-down(xs) {
 		border: none;

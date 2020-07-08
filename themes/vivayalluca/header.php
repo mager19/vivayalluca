@@ -71,7 +71,7 @@
 												<?php echo $phone; ?>
 											</a>
 										</li>
-										<li>
+										<li class="tienda">
 											<a href="#">Tienda Online</a>
 										</li>
 										<li class="shopping_cart">

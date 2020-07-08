@@ -29,9 +29,28 @@ $txt: #7f7e7e;
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: "Helvetica Neue LT W05_25 Ult Lt";
+	src: url("../css/fonts/11066b40-10f7-4123-ba58-d9cbf5e89ceb.woff")
+		format("woff");
+}
+
+@font-face {
+	font-family: "Helvetica Neue LT W05_65 Medium";
+	src: url("Fonts/7802e576-2ffa-4f22-a409-534355fbea79.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Helvetica Neue LT W05_35 Thin";
+	src: url("Fonts/b2c1327f-ab3d-4230-93d7-eee8596e1498.woff") format("woff");
+}
+
 //Define Theme Fonts
 $font-family-base: "helvetica";
 $font-family-alt: "proxima-nova";
+$font-family-baseThin: "Helvetica Neue LT W05_35 Thin";
+$font-family-baseLight: "Helvetica Neue LT W05_25 Ult Lt";
+$font-family-baseMedium: "Helvetica Neue LT W05_65 Medium";
 
 /*
     Define Theme Font Weights:
@@ -71,7 +90,7 @@ body {
 		font-family: $font-family-base;
 	}
 	p {
-		font-family: $font-family-base;
+		font-family: $font-family-baseLight;
 		color: $txt;
 		//opacity: 0.8;
 		word-wrap: normal;
