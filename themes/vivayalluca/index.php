@@ -27,7 +27,7 @@ get_header();
 
 				if (is_home() && !is_front_page()) :
 			?>
-					<div class="col-lg-9">
+					<div class="col-lg-9 col-12">
 						<?php
 						/* Start the Loop */
 						while (have_posts()) :
@@ -52,33 +52,37 @@ get_header();
 
 						the_posts_navigation(); ?>
 
+					</div>
 
+					<div class="col-lg-3 d-none d-lg-block">
+						<?php get_sidebar(); ?>
+					</div>
 
-					<?php
+				<?php
 				else : ?>
 
-						<div class="container row">
-							<div class="col-12">
-								<h3 class="text-center">
-									Lo sentimos no hay posts disponibles.
-								</h3>
-							</div>
+					<div class="container row">
+						<div class="col-12">
+							<h3 class="text-center">
+								Lo sentimos no hay posts disponibles.
+							</h3>
 						</div>
-
 					</div>
-				<?php
-				endif; ?>
 
 		</div>
-
 	<?php
-			endif;
-	?>
+				endif; ?>
 
 	</div>
-	</div>
+
+<?php
+			endif;
+?>
+
+</div>
+</div>
 </main><!-- #main -->
 
 <?php
-//get_sidebar();
+
 get_footer();
