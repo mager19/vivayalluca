@@ -51,6 +51,7 @@ footer {
 			h3 {
 				color: $dark-2;
 				font-size: 22px;
+				text-transform: inherit !important;
 
 				@include media-breakpoint-down(md) {
 					font-size: 18px;
