@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-<div class="container content-area">
+<div class="container content-area contacto__container">
 	<div class="row">
 		<div class="col-12">
 			<?php

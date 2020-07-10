@@ -205,3 +205,156 @@
 		}
 	}
 }
+
+.cita__container {
+	@include media-breakpoint-down(xs) {
+		text-align: center;
+	}
+	p {
+		color: $txt;
+		font-family: $font-family-baseMedium;
+		font-weight: 300;
+	}
+
+	form {
+		input {
+			border: 2px solid rgba(127, 126, 126, 0.3);
+			min-height: 64px;
+		}
+
+		li {
+			padding-left: 0;
+		}
+
+		label {
+			color: $dark-2;
+			letter-spacing: 0.2px;
+			text-transform: uppercase;
+		}
+
+		select {
+			background: linear-gradient(
+				180deg,
+				rgba(127, 126, 126, 0.2) 0%,
+				rgba(127, 126, 126, 0.1) 2%,
+				rgba(255, 255, 255, 0.14) 84%
+			);
+			border-radius: 5px;
+			border: 2px solid rgba(127, 126, 126, 0.2);
+			min-height: 38px;
+			padding: 0.7rem 1rem !important;
+		}
+
+		.gform_footer {
+			position: relative;
+			margin-bottom: 6rem;
+
+			&:before {
+				background-image: url("../img/interiorlogo.png");
+				background-size: cover;
+				content: "";
+				display: block;
+				width: 13rem;
+				height: 9.375rem;
+				position: absolute;
+				left: 0;
+				top: 0;
+
+				@include media-breakpoint-down(xs) {
+					position: relative;
+					margin-left: auto;
+					margin-right: auto;
+					left: 0;
+					right: 0;
+				}
+			}
+
+			input[type="submit"] {
+				background: #fff;
+				border: 2px solid #807e7e;
+				position: absolute;
+				right: 0;
+				min-height: 80px;
+				width: 40%;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+
+				@include fade(0.3s);
+
+				@include media-breakpoint-down(xs) {
+					width: 100%;
+					padding: 1rem;
+				}
+
+				&:hover {
+					background-color: $dark-2;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.contacto__container {
+	form {
+		position: relative;
+
+		padding: 0 15px;
+
+		li {
+			&:before {
+				display: none !important;
+				opacity: 0;
+			}
+		}
+
+		input,
+		textarea {
+			border: 0;
+			border-bottom: 1px solid $border-1;
+			margin-bottom: 4rem;
+			padding-left: 10px;
+			width: 70%;
+
+			&::placeholder {
+				font-size: 14px;
+				font-family: $font-family-base;
+				color: $txt;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				opacity: 0.8;
+			}
+		}
+
+		.name_first {
+			label {
+				display: none !important;
+			}
+		}
+
+		.gfield_label {
+			display: none !important;
+		}
+
+		ul li.gfield {
+			padding: 0;
+			margin: 0;
+		}
+
+		.gfield_required {
+			display: none;
+		}
+
+		.gform_footer {
+			input[type="submit"] {
+				background-color: #545454;
+				border-bottom: 0;
+				font-size: 14px;
+				font-family: $font-family-base;
+				color: #fff;
+				letter-spacing: 0.65px;
+				padding: 5px 1rem;
+			}
+		}
+	}
+}

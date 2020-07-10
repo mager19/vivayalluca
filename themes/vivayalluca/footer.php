@@ -66,7 +66,7 @@
 								</div>
 
 								<div class="col-12 cita__footer">
-									<h3>Haz una cita</h3>
+									<h3><a href="/cita/">Haz una cita</a></h3>
 									<ul class="menu__aux">
 										<li class="whatsapp_link">
 											<?php $phone = get_field('telefono', 'option'); ?>
@@ -81,12 +81,6 @@
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-
 		</div>
 	</div>
 </footer>

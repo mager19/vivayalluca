@@ -16,12 +16,12 @@
 get_header();
 ?>
 
-<div class="container py-5">
+<div class="container py-5 cita__container">
 	<div class="row">
 		<div class="col-12 col-lg-8 mx-auto">
-			<h3 class="title--section text-center">
+			<h2 class="title--page text-center">
 				Haz tu cita
-			</h3>
+			</h2>
 		</div>
 		<div class="col-lg-10 mx-auto py-5">
 			<?php
@@ -34,6 +34,13 @@ get_header();
 					<?php
 					the_content(); ?>
 				</div>
+
+				<?php
+				if (get_field('form_shortcode')) {
+					the_field('form_shortcode');
+				}
+
+				?>
 
 			<?php
 
