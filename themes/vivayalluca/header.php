@@ -28,7 +28,7 @@
 		<header id="masthead" class="site-header">
 			<div class="container">
 				<div class="row header__container">
-					<nav class="site-nav col-lg-4 d-none d-lg-block">
+					<nav class="site-nav site__header col-lg-4 d-none d-lg-block">
 						<div class="main-nav main-nav__left">
 							<?php
 							if (has_nav_menu('menu-1')) {
@@ -67,7 +67,7 @@
 									<ul class="menu__aux">
 										<li class="whatsapp_link">
 											<?php $phone = get_field('telefono', 'option'); ?>
-											<a href="tel:<?php echo $phone; ?>">
+											<a href="https://api.whatsapp.com/send?phone=<?php echo $phone; ?>&text=%C2%A1Hola!%20%C2%BFEn%20qu%C3%A9%20te%20podemos%20ayudar?" target="_blank">
 												<?php echo $phone; ?>
 											</a>
 										</li>

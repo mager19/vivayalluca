@@ -37,7 +37,7 @@
 								<h3>Suscríbete para recibir news y promos</h3>
 							</div>
 							<div class="form">
-								<?php echo do_shortcode("[gravityform id=3 title=false description=false ajax=true tabindex=49]") ?>
+								<?php echo do_shortcode("[gravityform id=2 title=false description=false ajax=true tabindex=49]") ?>
 							</div>
 						</div>
 					</div>
@@ -53,9 +53,12 @@
 										while (have_rows('social_icons', 'option')) : the_row();
 											$social = get_sub_field('social_icon');
 										?>
+
 											<li>
-												<a href="<?php the_sub_field('social_profile'); ?>" target="_blank" data-linktype="social" data-socialnetwork="<?php echo $social['value']; ?>">
-													<i class="icon-<?php echo $social['value']; ?>"></i>
+												<a href="<?php the_sub_field('social_profile'); ?>" target="_blank">
+
+													<i class="fa fa-<?php echo $social['value']; ?>" aria-hidden=" true"></i>
+
 												</a>
 											</li>
 										<?php endwhile; ?>

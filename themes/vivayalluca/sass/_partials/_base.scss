@@ -11,38 +11,10 @@ body {
 		a {
 			i {
 				background-repeat: no-repeat;
-				&:before {
-					display: none;
-				}
+				color: #807e7e;
+				font-size: 1.3rem;
 			}
 		}
-	}
-
-	.icon-whatsapp {
-		background-image: url("../img/whatsappFooter.png");
-		display: block;
-		width: 19px;
-		height: 19px;
-	}
-	.icon-email {
-		background-image: url("../img/mailFooter.png");
-		display: block;
-		width: 23.5px;
-		height: 19px;
-	}
-
-	.icon-instagram {
-		background-image: url("../img/instagramFooter.png");
-		display: block;
-		width: 18.3px;
-		height: 19px;
-	}
-
-	.icon-facebook {
-		background-image: url("../img/facebookFooter.png");
-		display: block;
-		width: 8.05px;
-		height: 19px;
 	}
 }
 

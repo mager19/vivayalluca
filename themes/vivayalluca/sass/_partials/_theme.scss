@@ -47,11 +47,18 @@ $txt: #7f7e7e;
 		format("woff");
 }
 
+@font-face {
+	font-family: "Helvetica Neue LT W05_45 Light";
+	src: url("../css/fonts/2a34f1f8-d701-4949-b12d-133c1c2636eb.woff")
+		format("woff");
+}
+
 //Define Theme Fonts
 $font-family-base: "helvetica";
 $font-family-alt: "proxima-nova";
 $font-family-baseThin: "Helvetica Neue LT W05_35 Thin";
-$font-family-baseLight: "Helvetica Neue LT W05_25 Ult Lt";
+$font-family-baseUltraLight: "Helvetica Neue LT W05_25 Ult Lt";
+$font-family-baseLight: "Helvetica Neue LT W05_45 Light";
 $font-family-baseMedium: "Helvetica Neue LT W05_65 Medium";
 
 /*

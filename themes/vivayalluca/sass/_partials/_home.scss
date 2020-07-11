@@ -1,4 +1,7 @@
 .slide__home {
+	padding-top: 1.78rem;
+	padding-bottom: 0.8rem !important;
+
 	img {
 		width: 100%;
 
@@ -41,6 +44,9 @@
 	margin-bottom: 2rem;
 
 	h3 {
+		color: $dark-1;
+		font-size: 22px;
+		font-family: $font-family-baseLight;
 		letter-spacing: 0.5px;
 	}
 

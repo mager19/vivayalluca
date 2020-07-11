@@ -11,7 +11,7 @@
 		min-height: 50px;
 
 		ul {
-			padding-bottom: 2.5rem;
+			padding-bottom: 3rem;
 			li {
 				padding: 0 2rem;
 			}
@@ -50,7 +50,9 @@ footer {
 
 			h3 {
 				color: $dark-2;
-				font-size: 22px;
+				font-size: 24px;
+				font-family: $font-family-baseMedium;
+				letter-spacing: 0.61px;
 				text-transform: inherit !important;
 
 				@include media-breakpoint-down(md) {
@@ -100,7 +102,7 @@ footer {
 
 				.gform_footer {
 					position: absolute;
-					top: 0%;
+					bottom: 8%;
 					left: 26%;
 					padding: 0;
 					margin-top: 5px;
@@ -114,7 +116,7 @@ footer {
 						background-color: transparent;
 						border-bottom: 0;
 						font-size: 14px;
-						font-family: $font-family-base;
+						font-family: $font-family-baseLight;
 						color: $txt;
 						letter-spacing: 0.65px;
 						opacity: 0.8;
@@ -166,7 +168,9 @@ footer {
 
 	h3 {
 		color: $dark-2;
-		font-size: 22px;
+		font-size: 24px;
+		font-family: $font-family-baseMedium;
+		letter-spacing: 0.61px;
 		text-transform: inherit !important;
 		margin-bottom: 0;
 
@@ -186,4 +190,8 @@ footer {
 			}
 		}
 	}
+}
+
+.validation_message {
+	display: none !important;
 }

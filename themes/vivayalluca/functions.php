@@ -159,6 +159,8 @@ function vivayalluca_scripts()
 
 	wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css', null, '1.0.1', false);
 
+	wp_enqueue_style('fontAwesome', get_template_directory_uri() . '/css/font-awesome.css', null, '1.0.1', false);
+
 	wp_enqueue_style('google-font-icon', 'https://fonts.googleapis.com/icon?family=Material+Icons');
 
 	wp_enqueue_script('vivayallucajs', get_template_directory_uri() . '/js/vivayalluca.js', array(), _S_VERSION, true);
@@ -208,4 +210,10 @@ if (class_exists('WooCommerce')) {
 if (function_exists('acf_add_options_page')) {
 
 	acf_add_options_page();
+}
+
+add_filter('gform_validation_message', 'change_message', 10, 2);
+function change_message($message, $form)
+{
+	return "<div class='validation_error'>Por Favor llena los campos requeridos para poder enviar el formulario - " . $form['title'] . '</div>';
 }

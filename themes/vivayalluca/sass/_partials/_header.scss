@@ -1,7 +1,17 @@
+header {
+	background-color: #fff;
+}
+
 .header__container {
 	align-items: center;
 	display: flex;
-	// min-height: 70px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.site__header {
+	padding-left: 15px;
+	padding-right: 0;
 }
 
 .main-nav {
@@ -14,7 +24,7 @@
 			a {
 				color: $txt;
 				font-size: 14px;
-				font-family: $font-family-baseLight;
+				font-family: $font-family-baseThin;
 				letter-spacing: 0.65px;
 			}
 		}
@@ -27,7 +37,7 @@
 	ul {
 		li {
 			padding-left: 0;
-			padding-right: 25px;
+			padding-right: 26px;
 		}
 	}
 }
@@ -36,10 +46,10 @@
 	padding-top: 1.5rem;
 	ul {
 		li {
-			padding-right: 28px;
+			padding-right: 26px;
 
 			&:first-child {
-				padding-left: 2.35rem;
+				padding-left: 1.2rem;
 			}
 		}
 	}
@@ -60,6 +70,7 @@
 .whatsapp_link {
 	padding-top: 4px;
 	a {
+		color: $txt;
 		font-family: $font-family-baseLight;
 		padding-left: 1rem;
 	}
@@ -79,7 +90,7 @@
 	justify-content: flex-end;
 
 	li {
-		padding-left: 15px !important;
+		padding-left: 16px !important;
 		padding-right: 0 !important;
 		margin-top: -8px;
 	}
