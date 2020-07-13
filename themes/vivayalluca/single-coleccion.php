@@ -19,7 +19,7 @@ while (have_posts()) : the_post();
 	<section class="intro__coleccion">
 		<div class="container content-area">
 			<div class="row">
-				<div class="col-8 mx-auto">
+				<div class="col-lg-4 col-8 mx-auto">
 					<div class="title__post__type">
 						<h3 class="text-center"><?php echo $obj->label; ?></h3>
 					</div>
@@ -132,7 +132,7 @@ while (have_posts()) : the_post();
 							</div>
 
 							<div class="col-md-4 col-12">
-								<div class="row no-gutters">
+								<div class="row no-gutters anchas">
 									<div class="col-12 mb-4 text-center">
 										<?php echo wp_get_attachment_image($imagen2['id'], array(300, 240)); ?>
 									</div>

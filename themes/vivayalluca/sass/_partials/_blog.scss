@@ -21,14 +21,12 @@
 
 		@include fade(0.5s);
 
-		&:hover {
-			color: #fbae3c;
+		i {
+			padding-right: 5px;
 		}
 
-		&:before {
-			@include mIcons("subject");
-			color: #fbae3c;
-			padding-right: 10px;
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
@@ -43,7 +41,8 @@
 
 	p {
 		color: $txt;
-		font-family: $font-family-baseMedium;
+		font-family: $font-family-base;
+		font-weight: 400;
 	}
 
 	a.leermas {

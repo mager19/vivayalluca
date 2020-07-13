@@ -6,8 +6,10 @@
                 <ul>
                     <?php $telefono = get_field("telefono", 'option'); ?>
                     <li><a href="tel:<?php echo $telefono; ?>">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
                             <?php echo $telefono; ?></a></li>
-                    <li><a href="/contacto/">Contáctanos</a></li>
+                    <li><a href="/contacto/"><i class="fa fa-envelope" aria-hidden="true"></i>Contáctanos</a></li>
                 </ul>
             </div>
         </div>

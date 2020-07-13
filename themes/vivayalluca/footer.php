@@ -74,6 +74,8 @@
 										<li class="whatsapp_link">
 											<?php $phone = get_field('telefono', 'option'); ?>
 											<a href="tel:<?php echo $phone; ?>">
+												<i class="fa fa-whatsapp" aria-hidden="true"></i>
+												<i class="fa fa-phone" aria-hidden="true"></i>
 												<?php echo $phone; ?>
 											</a>
 										</li>

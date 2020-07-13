@@ -19,13 +19,22 @@ body {
 }
 
 .title--page {
+	color: $dark-1;
 	font-size: 34px;
+	font-weight: 300;
 	letter-spacing: 0.93px;
-	padding: 1rem 0 3rem 0;
+	padding: 1rem 0 2.5rem 0;
+	margin-bottom: 0;
+}
+
+.subtitle {
+	letter-spacing: 0.93px;
+	font-weight: 300;
+	margin-bottom: 0.5rem;
 }
 
 .title__post__type {
-	border-bottom: 2px solid $border-1;
+	border-bottom: 2px solid #eae9e9;
 	padding-top: 1rem;
 
 	h3 {

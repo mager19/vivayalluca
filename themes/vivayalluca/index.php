@@ -38,7 +38,7 @@ get_header();
 								<div class="categories my-4">
 									<?php $categories = get_categories();
 									foreach ($categories as $category) {
-										echo '<div class="item__categories"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+										echo '<div class="item__categories"><a href="' . get_category_link($category->term_id) . '"><i class="fa fa-bars" aria-hidden="true"></i>' . $category->name . '</a></div>';
 									} ?>
 								</div>
 

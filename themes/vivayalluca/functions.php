@@ -161,7 +161,7 @@ function vivayalluca_scripts()
 
 	wp_enqueue_style('fontAwesome', get_template_directory_uri() . '/css/font-awesome.css', null, '1.0.1', false);
 
-	wp_enqueue_style('google-font-icon', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+	wp_enqueue_style('Roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 	wp_enqueue_script('vivayallucajs', get_template_directory_uri() . '/js/vivayalluca.js', array(), _S_VERSION, true);
 	wp_enqueue_script('vivayalluca-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);

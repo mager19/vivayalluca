@@ -51,7 +51,8 @@ footer {
 			h3 {
 				color: $dark-2;
 				font-size: 24px;
-				font-family: $font-family-baseMedium;
+				font-family: $font-family-base;
+				font-weight: 400;
 				letter-spacing: 0.61px;
 				text-transform: inherit !important;
 
@@ -116,7 +117,8 @@ footer {
 						background-color: transparent;
 						border-bottom: 0;
 						font-size: 14px;
-						font-family: $font-family-baseLight;
+						font-family: $font-family-base;
+						font-weight: 300;
 						color: $txt;
 						letter-spacing: 0.65px;
 						opacity: 0.8;
@@ -167,12 +169,17 @@ footer {
 	}
 
 	h3 {
-		color: $dark-2;
 		font-size: 24px;
-		font-family: $font-family-baseMedium;
+		font-family: $font-family-base;
+		font-weight: 400;
 		letter-spacing: 0.61px;
 		text-transform: inherit !important;
 		margin-bottom: 0;
+
+		a {
+			color: $dark-2;
+			font-weight: 400;
+		}
 
 		@include media-breakpoint-down(md) {
 			font-size: 18px;
@@ -183,7 +190,11 @@ footer {
 		margin-bottom: 0;
 		li {
 			margin-bottom: 0;
-			padding-top: 10px;
+			padding-top: 13px;
+
+			@include media-breakpoint-down(xs) {
+				padding-top: 10px;
+			}
 
 			&:before {
 				top: 40%;

@@ -42,7 +42,7 @@
 						<!-- Button trigger modal -->
 						<div class="mobile-nav flex items-center d-block d-lg-none">
 							<button type="button" id="openMenu">
-								<i class="material-icons">menu</i>
+								<i class="fa fa-bars" aria-hidden="true"></i>
 							</button>
 						</div>
 						<div class="logoContainer">
@@ -68,6 +68,7 @@
 										<li class="whatsapp_link">
 											<?php $phone = get_field('telefono', 'option'); ?>
 											<a href="https://api.whatsapp.com/send?phone=<?php echo $phone; ?>&text=%C2%A1Hola!%20%C2%BFEn%20qu%C3%A9%20te%20podemos%20ayudar?" target="_blank">
+												<i class="fa fa-whatsapp" aria-hidden="true"></i>
 												<?php echo $phone; ?>
 											</a>
 										</li>
