@@ -16,14 +16,14 @@
 get_header();
 ?>
 
-<div class="container py-5 cita__container">
+<div class="container pt-5 cita__container">
 	<div class="row">
 		<div class="col-12 col-lg-8 mx-auto">
 			<h2 class="title--page text-center">
 				Haz tu cita
 			</h2>
 		</div>
-		<div class="col-lg-10 mx-auto py-5">
+		<div class="col-lg-10 mx-auto pt-3 pb-5">
 			<?php
 			while (have_posts()) : the_post();
 				$GETlogo = get_field('logo_site', 'option'); ?>

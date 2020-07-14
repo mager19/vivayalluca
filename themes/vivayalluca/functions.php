@@ -217,3 +217,10 @@ function change_message($message, $form)
 {
 	return "<div class='validation_error'>Por Favor llena los campos requeridos para poder enviar el formulario - " . $form['title'] . '</div>';
 }
+
+// filter the Gravity Forms button type
+add_filter("gform_submit_button_3", "form_submit_button", 10, 2);
+function form_submit_button($button, $form)
+{
+	return "<button class='button button__solicita' id='gform_submit_button_{$form["id"]}'><span>SOLICITAR CITA <i class='fa fa-long-arrow-right' aria-hidden='true'></i> </span></button>";
+}

@@ -203,7 +203,7 @@
 
 		.gform_footer {
 			position: relative;
-			margin-bottom: 6rem;
+			margin-bottom: 10rem;
 
 			&:before {
 				background-image: url("../img/interiorlogo.png");
@@ -214,7 +214,7 @@
 				height: 9.375rem;
 				position: absolute;
 				left: 0;
-				top: 0;
+				top: 18px;
 
 				@include media-breakpoint-down(xs) {
 					position: relative;
@@ -225,7 +225,8 @@
 				}
 			}
 
-			input[type="submit"] {
+			input[type="submit"],
+			button {
 				background: #fff;
 				border: 2px solid #807e7e;
 				position: absolute;
@@ -234,6 +235,10 @@
 				width: 40%;
 				text-transform: uppercase;
 				letter-spacing: 1px;
+
+				i {
+					padding-left: 2rem;
+				}
 
 				@include fade(0.3s);
 
