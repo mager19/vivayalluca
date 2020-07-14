@@ -24,7 +24,7 @@ get_header();
 				<h2 class="title--page text-center"><?php the_title(); ?></h2>
 
 				<div class="row">
-					<div class="col-lg-6 col-10 mx-auto">
+					<div class="col-lg-8 col-10 mx-auto">
 						<?php the_content(); ?>
 					</div>
 				</div>
