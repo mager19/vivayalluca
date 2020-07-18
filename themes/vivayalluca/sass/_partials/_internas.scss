@@ -16,10 +16,12 @@
 	p {
 		color: $txt;
 		font-size: 14px;
+		text-align: justify;
 	}
 
 	h3 {
 		font-size: 1.875rem;
+		font-weight: 300;
 	}
 }
 
@@ -31,6 +33,7 @@
 	p {
 		color: $txt;
 		font-size: 14px;
+		text-align: justify;
 	}
 
 	h3 {
@@ -173,12 +176,14 @@
 		color: $txt;
 		font-family: $font-family-base;
 		font-weight: 400;
+		text-align: justify;
 	}
 
 	form {
-		input {
-			border: 2px solid rgba(127, 126, 126, 0.3);
-			min-height: 64px;
+		input,
+		textarea {
+			border: 2px solid rgba(127, 126, 126, 0.2);
+			min-height: 49px;
 		}
 
 		li {
@@ -187,8 +192,11 @@
 
 		label {
 			color: $dark-2;
+			font-weight: 500 !important;
+			font-size: 14px !important;
 			letter-spacing: 0.2px;
 			text-transform: uppercase;
+			margin-bottom: 0;
 		}
 
 		select {
@@ -272,22 +280,22 @@
 			}
 		}
 
+		.ginput_container {
+			margin-top: 0 !important;
+		}
+
 		input,
 		textarea {
 			border: 0;
 			border-bottom: 1px solid $border-1;
 			margin-bottom: 4rem;
+			margin-top: 0 !important;
 			padding-left: 10px;
 			width: 70%;
+		}
 
-			&::placeholder {
-				font-size: 14px;
-				font-family: $font-family-base;
-				color: $txt;
-				letter-spacing: 3px;
-				text-transform: uppercase;
-				opacity: 0.8;
-			}
+		input {
+			margin-top: -10px !important;
 		}
 
 		.name_first {

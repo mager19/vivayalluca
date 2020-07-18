@@ -23,7 +23,7 @@ get_header();
 				Haz tu cita
 			</h2>
 		</div>
-		<div class="col-lg-10 mx-auto pt-3 pb-5">
+		<div class="col-lg-9 mx-auto pt-3 pb-5">
 			<?php
 			while (have_posts()) : the_post();
 				$GETlogo = get_field('logo_site', 'option'); ?>

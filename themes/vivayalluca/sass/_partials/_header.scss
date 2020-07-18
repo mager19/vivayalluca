@@ -1,5 +1,13 @@
 header {
 	background-color: #fff;
+
+	.logoContainer {
+		img {
+			max-width: initial !important;
+			width: 90%;
+			height: auto;
+		}
+	}
 }
 
 .header__container {
@@ -45,13 +53,18 @@ header {
 }
 
 .main-nav__right {
-	padding-top: 1.5rem;
+	// padding-top: 1.5rem;
 	ul {
+		text-align: right;
 		li {
-			padding-right: 18px;
+			padding-right: 7px;
 
 			&:first-child {
-				padding-left: 1.2rem;
+				padding-left: 1rem;
+			}
+
+			&:last-child {
+				padding-right: 0;
 			}
 		}
 	}

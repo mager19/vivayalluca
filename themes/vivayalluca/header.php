@@ -48,7 +48,7 @@
 						<div class="logoContainer">
 							<?php $GETlogo = get_field('logo_site', 'option'); ?>
 							<a href="<?php echo esc_url(get_bloginfo('url')); ?>">
-								<img src="<?php echo $GETlogo['url']; ?>" height="<?php echo $GETlogo['height'] / 2; ?>" width="<?php echo $GETlogo['width'] / 2; ?>" />
+								<img src="<?php echo $GETlogo['url']; ?>" />
 							</a>
 						</div>
 					</div><!-- .site-branding -->
@@ -61,33 +61,6 @@
 										wp_nav_menu(array('theme_location' => 'menu-2'));
 									}
 									?>
-								</div>
-
-								<div class="col-12">
-									<ul class="menu__aux">
-										<li class="whatsapp_link">
-											<?php $phone = get_field('telefono', 'option'); ?>
-											<a href="https://api.whatsapp.com/send?phone=<?php echo $phone; ?>&text=%C2%A1Hola!%20%C2%BFEn%20qu%C3%A9%20te%20podemos%20ayudar?" target="_blank">
-												<i class="fa fa-whatsapp" aria-hidden="true"></i>
-												<?php echo $phone; ?>
-											</a>
-										</li>
-										<li class="tienda">
-											<a href="#">Tienda Online</a>
-										</li>
-										<li class="shopping_cart">
-											<a href="#">
-
-											</a>
-										</li>
-
-										<li class="login">
-											<a href="#">
-
-											</a>
-										</li>
-									</ul>
-
 								</div>
 							</div>
 						</div>

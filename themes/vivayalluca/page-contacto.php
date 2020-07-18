@@ -18,7 +18,7 @@ get_header();
 
 <div class="container content-area contacto__container">
 	<div class="row">
-		<div class="col-12">
+		<div class="col-12 mx-auto">
 			<?php
 			while (have_posts()) : the_post(); ?>
 				<div class="col-12">
@@ -26,7 +26,7 @@ get_header();
 				</div>
 
 
-				<div class="col-lg-10 mx-auto form__contact">
+				<div class="col-lg-9 mx-auto form__contact">
 					<?php the_content(); ?>
 				</div>
 			<?php
