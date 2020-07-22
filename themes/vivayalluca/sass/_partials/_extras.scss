@@ -1,0 +1,127 @@
+.main-nav ul li a {
+	font-weight: 300;
+	opacity: 1;
+}
+
+p {
+	font-weight: 100 !important;
+	font-size: 14px !important;
+	line-height: 21px !important;
+	letter-spacing: 0.83px !important;
+	color: #0a0808 !important;
+}
+
+.section__title h3 {
+	font-weight: 300 !important;
+	font-size: 22px !important;
+	line-height: 26px !important;
+	letter-spacing: 0.5px !important;
+	color: #3a3838 !important;
+}
+
+.section__title {
+	border-bottom: 0.5px solid #7f7e7e;
+}
+
+.colecciones__item .item__title {
+	font-weight: 400 !important;
+	font-size: 22px !important;
+	line-height: 27px !important;
+	letter-spacing: 0.3px !important;
+	color: #545454 !important;
+}
+
+.title--page {
+	font-weight: 500 !important;
+	font-size: 30px !important;
+	line-height: 40px !important;
+	letter-spacing: 1px !important;
+	color: #545454 !important;
+}
+
+/* ESTO ES PARA EL HOME */
+
+.page-id-65 h3,
+.page-id-65 .h3 {
+	font-weight: 300 !important;
+	font-size: 24px !important;
+	line-height: 40px !important;
+	letter-spacing: 0.5px !important;
+	color: #7f7e7e !important;
+}
+
+.title__post__type h3 {
+	font-weight: 100 !important;
+	font-size: 22px !important;
+	line-height: 26px !important;
+	letter-spacing: 0.5px !important;
+	color: #0a0808 !important;
+}
+
+.title__post__type h3 {
+	font-weight: 100 !important;
+	font-size: 22px !important;
+	line-height: 26px !important;
+	letter-spacing: 0.5px !important;
+	color: #0a0808 !important;
+}
+.title__post__type {
+	border-bottom: 0.5px solid #eae9e9;
+}
+
+/* ESTO ES PARA INTERIOR DESIGN STUDIO */
+.page-id-69 h3,
+.page-id-69 .h3 {
+	font-weight: 400 !important;
+	font-size: 27px !important;
+	line-height: 35px !important;
+	letter-spacing: 0.5px !important;
+	color: #545454 !important;
+}
+
+.show__rooms__subtitle {
+	font-weight: 300 !important;
+	font-size: 28px !important;
+	line-height: 33px !important;
+	letter-spacing: 0.5px !important;
+	color: #7f7e7e !important;
+}
+
+.ht-ctc-chat {
+	padding-bottom: 70px;
+}
+
+.contacto__container form .gfield_label {
+	color: #7f7e7e;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400 !important;
+	font-size: 12px !important;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 0 !important;
+}
+
+.showrooms__item .informacion__item h3 {
+	color: #545454;
+	opacity: 1;
+	font-size: 21px;
+}
+
+.cita__container form textarea {
+	height: 170px !important;
+}
+
+.cita__container form .gform_footer:before {
+	background-size: 70%;
+	top: 40px;
+	left: 64%;
+	background-repeat: no-repeat;
+}
+
+.cita__container form .gform_footer input[type="submit"],
+.cita__container form .gform_footer button {
+	border: 2px solid rgba(127, 126, 126, 0.2);
+	min-height: 65px;
+	width: 31%;
+	right: 5.2%;
+}
